@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 
 
-/* font-family: 'Ubuntu', sans-serif; */
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
 
 *{
     margin: 0;
@@ -25,10 +27,11 @@ a {
 }
 
 
+
 /* ---------- Header --------- */
 .header-section{
     /* position: fixed; */
-    background-color: #363634;
+    background-color: #051B26;
     width: 100%;
 }
 
@@ -45,11 +48,17 @@ a {
 }
 
 .header-menu .menu li a {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 15px;
     color: #fff;
-    padding: 10px 30px;
+    padding: 10px 20px;
+}
+
+.header-menu .menu li a:hover {
+    font-weight: 700;
+    border-bottom: 4px solid white;
+    /* transition: all 0.4s ease 0s; */
 }
 
 .cart-icon{
@@ -58,14 +67,14 @@ a {
 
 .fa-cart-plus{
     color: #fff;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
 }
 
 .cart-basket{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 17px;
     color: #fff;
     padding-left: 16px;
 }
@@ -88,16 +97,16 @@ a {
 }
 
 .banner-section .container h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 600;
     color: #fff;
     line-height: 52px;
 
 }
 
 .banner-section .container p{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 300;
     color: #fff;
@@ -109,6 +118,148 @@ a {
     font-size: 30px;
     color: #fff;
     margin: 10px;
+}
+
+
+
+.banner-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px;
+    background-color: #051B26;
+}
+
+.banner-footer h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+
+
+/* --------- Product--------- */
+.products-section .container{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.products-section .container h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 10;
+    line-height: 12px;
+}
+
+.products-section .container h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+
+.all-products{
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.all-products .product{
+    border: 2px solid gray;
+    /* border-radius: 4%; */
+    padding: 20px 40px;
+    box-shadow: 3px 3px 3px;
+}
+
+.all-products .product img{
+    height: 150px;
+    width: 270px;
+}
+
+.all-products .product .product-name{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.all-products .product .product-price{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(170, 26, 4);
+}
+
+.all-products .product button{
+    background-color: #3C3C3C;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 15px;
+    padding: 10px 45px;
+    cursor: pointer;
+}
+
+.all-products .product button:hover{
+    background-color: black;
+    font-weight: 700;
+    transition: all 0.2s ease 0s;
+}
+
+
+/* ------------Offer----------- */
+.offer-section{
+    background-image: url(./img/offer.jpg);
+    height: 490px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.offer-section .container{
+    padding-top: 50px;
+}
+
+.offer-section .container h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255 238 133);
+}
+
+.offer-section .container h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.offer-section .container p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.offer-section .container button{
+    background-color: #FEED93;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.offer-section .container button:hover{
+    background-color: rgb(255 238 133);
+    font-weight: 500;
+    transition: all 0.2s ease 0s;
 }
 
 
@@ -125,16 +276,17 @@ a {
 }
 
 .about-text h2{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 50px;
-    font-weight: 400;
-    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    margin-bottom: 40px;
 }
 
 .about-text p{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 17px;
-    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .about-img img{
@@ -146,10 +298,10 @@ a {
     background-color: #3C3C3C;
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
     font-weight: 300;
     margin-top: 40px;
-    padding: 10px 20px;
+    padding: 10px 40px;
     cursor: pointer;
 }
